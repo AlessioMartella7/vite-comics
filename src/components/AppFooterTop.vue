@@ -2,7 +2,89 @@
 export default {
   data() {
     return {
-      
+        dcComicLinks: [
+        {
+            name: 'Characters'
+        },
+        {
+            name: 'Comics'
+        },
+        {
+            name: 'Covies'
+        },
+        {
+            name: 'Tv'
+        },
+        {
+            name: 'Games'
+        },
+        {
+            name: 'Collectibles'
+        },
+        {
+            name: 'News'
+        },
+      ],
+        shopLinks: [
+        {
+            name: 'Shop DC'
+        },
+        {
+            name: 'Shop DC Collectibles'
+        },
+      ],
+        dcLinks: [
+        {
+            name: 'Terms Of Use'
+        },
+        {
+            name: 'Privacy policy(New)'
+        },
+        {
+            name: 'Ad Choices'
+        },
+        {
+            name: 'Advetising'
+        },
+        {
+            name: 'Jobs'
+        },
+        {
+            name: 'Subscriptions'
+        },
+        {
+            name: 'Talent Workshop'
+        },
+        {
+            name: 'CPSC Certificates'
+        },
+        {
+            name: 'Ratings'
+        },
+        {
+            name: 'Shop Help'
+        },
+        {
+            name: 'Contact Us'
+        }
+      ],
+        sitesLinks: [
+        {
+            name: 'DC'
+        },
+        {
+            name: 'MAD Magazine'
+        },
+        {
+            name: 'DC Kids'
+        },
+        {
+            name: 'DC Universe'
+        },
+        {
+            name: 'DC Power Visa'
+        },
+      ]
     }
   }
 }
@@ -16,21 +98,20 @@ export default {
                     <section id="dc-comics">
                         <h5>DC COMICS</h5>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li v-for="link in dcComicLinks">
+                                <a href="#">{{link.name}}</a>
+                            </li>
+
+                            
                         </ul>
                     </section>
 
                     <section id="shop">
                         <h5>SHOP</h5>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li v-for="link in shopLinks">
+                                <a href="#">{{link.name}}</a>
+                            </li>
                         </ul>
                     </section>
                 </div>
@@ -40,17 +121,9 @@ export default {
                     <section id="dc-comics">
                         <h5>DC</h5>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li v-for="link in dcLinks">
+                                <a href="#">{{link.name}}</a>
+                            </li>
                         </ul>
                     </section>
                 </div>
@@ -59,11 +132,9 @@ export default {
                     <section id="sites">
                         <h5>SITES</h5>
                         <ul>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
+                            <li v-for="link in sitesLinks">
+                                <a href="#">{{link.name}}</a>
+                            </li>
                         </ul>
                     </section>
                 </div>  
@@ -92,7 +163,6 @@ export default {
 
 .footer-links {
     margin-top: 5rem;
-    width: 30%;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -102,6 +172,11 @@ col {
     width: calc(100%/3);
 }
 
+.left-col,
+.middle-col{
+    margin-right: 3.5rem;
+}
+
 h5 {color: #fff;
     font-size: 1.5rem;
 }
@@ -109,7 +184,7 @@ h5 {color: #fff;
 li {
     margin: 5px 0;
     a {
-        color: gray;
+        color:gray;
     }
 }
 
