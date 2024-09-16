@@ -2,7 +2,38 @@
 export default {
   data() {
     return {
-      
+      links: [
+        {
+            name: 'characters'
+        },
+        {
+            name: 'comics'
+        },
+        {
+            name: 'movies'
+        },
+        {
+            name: 'tv'
+        },
+        {
+            name: 'games'
+        },
+        {
+            name: 'collectibles'
+        },
+        {
+            name: 'videos'
+        },
+        {
+            name: 'fans'
+        },
+        {
+            name: 'news'
+        },
+        {
+            name: 'shop'
+        },
+      ],
     }
   }
 }
@@ -17,16 +48,9 @@ export default {
 
             <div class="navbar">
                     <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li  v-for="link in links">
+                            <a href="#">{{ link.name }}</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -56,6 +80,7 @@ ul {
     li{
         display: flex;
         align-items: center;
+        font-weight: 600;
         height: 100%;
         &:hover {
             border-bottom: 3px solid #0C7CEC;

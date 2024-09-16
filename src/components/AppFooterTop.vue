@@ -91,9 +91,9 @@ export default {
 }
 
 .footer-links {
+    margin-top: 5rem;
     width: 30%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
