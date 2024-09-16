@@ -53,4 +53,8 @@ ul {
     display: flex;
     gap: 2rem;
 }
+
+a {
+    text-transform:uppercase;
+}
 </style>
