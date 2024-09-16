@@ -16,7 +16,6 @@ export default {
             </div>
 
             <div class="navbar">
-                <nav>
                     <ul>
                         <li><a href="#">link</a></li>
                         <li><a href="#">link</a></li>
@@ -29,7 +28,6 @@ export default {
                         <li><a href="#">link</a></li>
                         <li><a href="#">link</a></li>
                     </ul>
-                </nav>
             </div>
         </div>
     </header>
@@ -39,22 +37,38 @@ export default {
 
 header {
     background-color: #fff;
-    padding: 1.5rem;
     margin-top: 1.5rem;
 }
 
 .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 ul {
+    height: 140px;
     display: flex;
+    align-items: center;
     gap: 2rem;
+
+    li{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &:hover {
+            border-bottom: 3px solid #0C7CEC;
+        }
+    }
 }
 
 a {
     text-transform:uppercase;
+    color: #1C1C1C;
+
+    &:hover {
+        color: #0C7CEC;
+        }
 }
 </style>
