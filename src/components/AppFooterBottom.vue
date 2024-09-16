@@ -31,10 +31,18 @@ export default {
 <style lang="scss" scoped>
   .footer-bottom {
     background-color: #303030;
+    height: 140px;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
 
   }
 
   .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +53,7 @@ export default {
     background-color: transparent;
     color: #fff;
     font-weight: 600;
+    font-size: 1.5rem;
     padding: 10px 15px;
     cursor: pointer;
   }
@@ -58,6 +67,7 @@ export default {
   a {
     color: #0C7CEC;
     font-weight: 600;
+    font-size: 1.5rem;
   
   }
 </style>

@@ -81,6 +81,7 @@ export default {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 500px;
 }
 
 .container {
@@ -94,6 +95,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
 }
 
 col {
