@@ -33,7 +33,7 @@ export default {
     background-color: #303030;
     height: 140px;
     margin-bottom: 1.5rem;
-    position: absolute;
+        position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
