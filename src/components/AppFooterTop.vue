@@ -10,7 +10,7 @@ export default {
 
 <template>
 <div>
-    FOOTER TOP
+  
 </div>
 </template>
 
