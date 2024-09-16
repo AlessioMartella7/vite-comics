@@ -1,27 +1,26 @@
 <script>
 export default {
-  data() {
-    return {
-      
+    data() {
+        return {
+
+        }
     }
-  }
 }
 </script>
 
 <template>
 
-<main>
-    <div class="container">
-        <div class="main-content">
-            <p> --> Content Goes Here <-- </p>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <p> --> Content Goes Here <-- </p>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
 </template>
 
 <style lang="scss" scoped>
-
 main {
     background-color: #1C1C1C;
 }
@@ -35,5 +34,4 @@ main {
     font-weight: 600;
     font-size: 1.5rem;
 }
-
 </style>
