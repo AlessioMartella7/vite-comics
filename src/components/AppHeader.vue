@@ -61,7 +61,6 @@ export default {
 
 header {
     background-color: #fff;
-    margin-top: 1.5rem;
 }
 
 .container {

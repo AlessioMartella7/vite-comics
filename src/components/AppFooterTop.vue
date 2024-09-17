@@ -153,6 +153,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+
 }
 
 .container {

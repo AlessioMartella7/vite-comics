@@ -9,7 +9,9 @@ export default {
 </script>
 
 <template>
+    <div class="main-background">
 
+    </div>
     <main>
         <div class="container">
             <div class="main-content">
@@ -21,6 +23,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+.main-background {
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+
 main {
     background-color: #1C1C1C;
 }

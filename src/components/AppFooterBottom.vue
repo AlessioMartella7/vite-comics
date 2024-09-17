@@ -32,8 +32,8 @@ export default {
   .footer-bottom {
     background-color: #303030;
     height: 140px;
-    margin-bottom: 1.5rem;
-        position: absolute;
+    position: relative;
+    z-index: 1;
     bottom: 0;
     right: 0;
     left: 0;
