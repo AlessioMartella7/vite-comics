@@ -91,7 +91,8 @@ export default {
 </script>
 
 <template>
-   <div id="footer-top">
+    <div id="footer-top">
+       <div class="banner-footer-top"></div>
         <div class="container">
             <div class="footer-links">
                 <div class="col left-col">
@@ -148,18 +149,30 @@ export default {
 
 <style lang="scss" scoped>
 
+
 #footer-top {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
-
+    height: 540px;
+    padding-top: 6rem;
+    position: relative;
+    
+    .banner-footer-top {
+        height: 160px;
+        background-color: #0C7CEC;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+    }
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .footer-links {
