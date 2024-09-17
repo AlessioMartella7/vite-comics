@@ -100,7 +100,10 @@ export default {
                         :cardSeries="card.series"
                         :cardType="card.type"
                         />
+                        <button class="load-button">Load More</button>
                     </div>    
+                    
+                    
             </div>
         </div>
     </main>
@@ -144,5 +147,16 @@ main {
     justify-content: center;
     gap: 1rem;
     
+}
+
+.load-button{
+    margin-top: 2rem;
+    background-color:#0C7CEC ;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 </style>

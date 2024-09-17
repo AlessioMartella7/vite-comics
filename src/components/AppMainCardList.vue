@@ -28,7 +28,7 @@ export default {
 
 <template>
 <article class="card">
-    <img :src="cardImage" :alt="cardSeries">
+   <a href="#"> <img :src="cardImage" :alt="cardSeries"></a>
     <p>{{ cardSeries }}</p>
 </article>
 </template>
