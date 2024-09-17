@@ -27,11 +27,27 @@ export default {
 </script>
 
 <template>
-<div class="card">
+<article class="card">
     <img :src="cardImage" :alt="cardSeries">
-</div>
-<h3>{{ cardSeries }}</h3>
+    <p>{{ cardSeries }}</p>
+</article>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.card {
+ width:calc(100vw / 10 - 1rem);
+  p {
+    margin-top: 1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    }
+}
+img {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    height: calc(100vw/10 - 1rem);
+}
 </style>

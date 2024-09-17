@@ -92,13 +92,7 @@ export default {
         <div class="container">
             <p class="main-title">CURRENT SERIES</p>
             <div class="main-content">
-                <ul>
-<!--  "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
-      "price": "$19.99",
-      "series": "Action Comics",
-      "type": "comic book",
- -->
-                    <li>
+                    <div class="card-list-container">
                         <AppMainCardList 
                         v-for="(card,index) in cardList" :key="index"
                         :cardImage="card.thumb"
@@ -106,8 +100,7 @@ export default {
                         :cardSeries="card.series"
                         :cardType="card.type"
                         />
-                    </li>
-                </ul>
+                    </div>    
             </div>
         </div>
     </main>
@@ -144,9 +137,12 @@ main {
     }
 }
 
-.main-content {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.5rem;
+.card-list-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    
 }
 </style>
