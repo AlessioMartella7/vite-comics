@@ -84,15 +84,49 @@ export default {
         {
             name: 'DC Power Visa'
         },
+      ],
+      iconsList: [
+        {
+            imgUrl: 'buy-comics-digital-comics.png',
+            name: 'digital-comics'
+        },
+        {
+            imgUrl: 'buy-comics-merchandise.png',
+            name: 'dr merchandise'
+        },
+        {
+            imgUrl: 'buy-comics-subscriptions.png',
+            name: ' subscription'
+        },
+        {
+            imgUrl: 'buy-comics-shop-locator.png',
+            name: 'comic shop locator'
+        },
+        {
+            imgUrl: 'buy-dc-power-visa.svg',
+            name: 'dc power visa'
+        },
       ]
     }
-  }
+  },
+  methods: {
+    getImageUrl (imagePath){
+        return new URL (`../assets/img/${imagePath}`, import.meta.url).href;
+    }
+  },
 }
 </script>
 
 <template>
     <div id="footer-top">
-       <div class="banner-footer-top"></div>
+       <div class="banner-footer-top">
+        
+            <div class="icons-container" v-for="(icon,index) in iconsList" :key="index"> 
+                <img :src="getImageUrl(icon.imgUrl)" :alt="icon.name">
+                <p>{{ icon.name }}</p>
+            </div>
+       
+       </div>
         <div class="container">
             <div class="footer-links">
                 <div class="col left-col">
@@ -165,6 +199,30 @@ export default {
         top: 0;
         left: 0;
         right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 5rem;
+        
+        .icons-container{
+            display: flex;
+            align-items: center;
+           
+        }
+        img {
+            height: 65px;
+        }
+         img:last-child {
+            width: 50px;
+        }
+        p {
+            color: #fff;
+            margin-left: 2rem;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+
+        }
     
     }
 }
